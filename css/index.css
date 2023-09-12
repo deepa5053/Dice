@@ -1,0 +1,35 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.faces{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dice{
+    display: grid;
+    grid-template-areas:
+        "a . c"
+        "e g f"
+        "d . b";
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+.dots:nth-child(2) {
+    grid-area: b;
+}
+.dots:nth-child(3) {
+    grid-area: c;
+}
