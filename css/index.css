@@ -7,29 +7,45 @@ body{
     justify-content: center;
     align-items: center;
 }
+.dice{
+    display: flex;
+    flex-direction: row;
+    
+}
 .faces{
     width: 100px;
     height: 100px;
     border-radius: 10px;
     background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.dice{
+    margin: 15px;
     display: grid;
     grid-template-areas:
         "a . c"
         "e g f"
         "d . b";
+}
+.dots{
     width: 20px;
     height: 20px;
     background-color: black;
     border-radius: 50%;
+    
 }
 .dots:nth-child(2) {
     grid-area: b;
 }
 .dots:nth-child(3) {
     grid-area: c;
+}
+.dots:nth-child(4) {
+    grid-area: d;
+}
+.dots:nth-child(5) {
+    grid-area: e;
+}
+.dots:nth-child(6) {
+    grid-area: f;
+}
+.dots:nth-child(odd):last-child {
+    grid-area: g;
 }
